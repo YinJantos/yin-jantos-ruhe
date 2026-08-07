@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /concept-ruhe/
+
+Sitemap: https://lio-yin-jantos-concepts.vercel.app/sitemap.xml

@@ -1,0 +1,4 @@
+.vercel
+output/
+.playwright-cli/
+node_modules/

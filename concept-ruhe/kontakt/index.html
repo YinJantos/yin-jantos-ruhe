@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PMR-Kursplatz oder den Workshop Regeneration kompakt bei Yin & Jantos unverbindlich anfragen.">
+  <title>Kontakt & Kursanfrage | Yin & Jantos</title>
+  <link rel="canonical" href="https://lio-yin-jantos-concepts.vercel.app/concept-ruhe/kontakt/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Yin & Jantos">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="Kontakt & Kursanfrage | Yin & Jantos">
+  <meta property="og:description" content="PMR-Kursplatz oder den Workshop Regeneration kompakt bei Yin & Jantos unverbindlich anfragen.">
+  <meta property="og:url" content="https://lio-yin-jantos-concepts.vercel.app/concept-ruhe/kontakt/">
+  <meta property="og:image" content="https://lio-yin-jantos-concepts.vercel.app/concept-ruhe/assets/lio-home.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kontakt & Kursanfrage | Yin & Jantos">
+  <meta name="twitter:description" content="PMR-Kursplatz oder den Workshop Regeneration kompakt bei Yin & Jantos unverbindlich anfragen.">
+  <meta name="twitter:image" content="https://lio-yin-jantos-concepts.vercel.app/concept-ruhe/assets/lio-home.webp">
+  <link rel="icon" type="image/png" href="/concept-ruhe/assets/favicon.png">
+  <link rel="stylesheet" href="/concept-ruhe/styles.css">
+  <script src="/concept-ruhe/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <site-header></site-header>
+  <main id="main">
+    <section class="section" style="padding-top: 180px">
+      <div class="contact-layout">
+        <div class="contact-copy">
+          <p class="eyebrow dark">Kontakt</p>
+          <h1>Welcher Kurs passt zu dir?</h1>
+          <p>Schreib mir kurz, wofür du dich interessierst. Du erhältst eine persönliche Rückmeldung zu Terminen, freien Plätzen und dem passenden Standort.</p>
+          <div class="contact-direct">
+            <span>Direkt per E-Mail</span>
+            <a href="mailto:mail@yinjantos.de">mail@yinjantos.de</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" action="/api/contact" method="post" novalidate>
+          <div class="field">
+            <label for="name">Name *</label>
+            <input id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">E-Mail *</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Telefon, optional</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="course">Interesse</label>
+            <select id="course" name="course">
+              <option>PMR-Starterkurs</option>
+              <option>Regeneration kompakt</option>
+              <option>Allgemeine Frage</option>
+            </select>
+          </div>
+          <div class="field field-full">
+            <label for="location">Bevorzugter Standort</label>
+            <select id="location" name="location">
+              <option>Noch offen</option>
+              <option>ReHarmonie, Braunschweig Ost</option>
+              <option>Praxis Schmid, Schneider & Bethke, Braunschweig West</option>
+              <option>Kneipp-Verein, Wolfenbüttel</option>
+            </select>
+          </div>
+          <div class="field field-full">
+            <label for="message">Nachricht *</label>
+            <textarea id="message" name="message" minlength="10" maxlength="3000" placeholder="Worum geht es dir und wann bist du am besten erreichbar?" required></textarea>
+          </div>
+          <div class="field hp-field" aria-hidden="true">
+            <label for="website">Website</label>
+            <input id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+          <label class="consent-row field-full">
+            <input type="checkbox" name="privacy" required>
+            <span>Ich habe die <a href="/concept-ruhe/datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage zu. *</span>
+          </label>
+          <button class="button button-dark" type="submit">Anfrage senden</button>
+          <p class="form-note" id="form-notice" role="status" aria-live="polite">Deine Angaben werden ausschließlich zur Bearbeitung deiner Anfrage verwendet.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <site-footer></site-footer>
+</body>
+</html>
