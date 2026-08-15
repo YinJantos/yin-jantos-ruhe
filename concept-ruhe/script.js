@@ -13,7 +13,7 @@ const courseItems = `
 
 const locationItems = `
   <a href="${BASE}/standorte/reharmonie/">ReHarmonie <small>Braunschweig Ost</small></a>
-  <a href="${BASE}/standorte/praxis-schmid/">Praxis Schmid, Schneider &amp; Bethke <small>Braunschweig West</small></a>
+  <a href="${BASE}/standorte/praxis-schmid/">Praxis Schmid, Schneider &amp; Bethge <small>Braunschweig West</small></a>
   <a href="${BASE}/standorte/kneipp-verein/">Kneipp-Verein <small>Wolfenbüttel</small></a>
 `;
 
